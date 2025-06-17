@@ -7,6 +7,18 @@ body {
   color: #2b2b2b;
 }
 
+/* ANIMAÇÃO */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .container {
   max-width: 400px;
   margin: 0 auto;
@@ -23,10 +35,20 @@ body {
   z-index: 1;
 }
 
+/* Elementos animados */
+.profile-pic,
+.nome,
+.descricao,
+.botoes .botao {
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
 .profile-pic {
   margin-top: -70px;
   position: relative;
   z-index: 2;
+  animation-delay: 0.3s;
 }
 
 .profile-pic img {
@@ -42,6 +64,7 @@ body {
   font-size: 36px;
   margin-top: 10px;
   color: #2b2b2b;
+  animation-delay: 0.6s;
 }
 
 .descricao {
@@ -50,6 +73,7 @@ body {
   color: #555;
   margin-bottom: 30px;
   text-transform: uppercase;
+  animation-delay: 0.9s;
 }
 
 .botoes {
@@ -57,6 +81,23 @@ body {
   flex-direction: column;
   gap: 15px;
   padding: 0 30px;
+}
+
+/* Animação em cascata nos botões */
+.botoes .botao:nth-child(1) {
+  animation-delay: 1.2s;
+}
+.botoes .botao:nth-child(2) {
+  animation-delay: 1.4s;
+}
+.botoes .botao:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.botoes .botao:nth-child(4) {
+  animation-delay: 1.8s;
+}
+.botoes .botao:nth-child(5) {
+  animation-delay: 2.0s;
 }
 
 .botao {
