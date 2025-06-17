@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Montserrat:wght@400;600&family=Great+Vibes&display=swap');
 
 body {
   margin: 0;
@@ -19,29 +19,37 @@ body {
   height: auto;
   border-bottom-left-radius: 100% 20%;
   border-bottom-right-radius: 100% 20%;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-pic {
+  margin-top: -70px;
+  position: relative;
+  z-index: 2;
 }
 
 .profile-pic img {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  margin-top: -60px;
   border: 5px solid #fdf8f3;
   object-fit: cover;
 }
 
 .nome {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
   margin-top: 10px;
-  font-weight: normal;
+  color: #2b2b2b;
 }
 
 .descricao {
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-size: 12px;
+  letter-spacing: 3px;
   color: #555;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .botoes {
@@ -54,7 +62,7 @@ body {
 .botao {
   background-color: #fff;
   border: 2px solid #ccc;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 15px;
   font-weight: 600;
   color: #000;
@@ -67,7 +75,7 @@ body {
 }
 
 .footer {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 13px;
   color: #444;
 }
@@ -80,7 +88,7 @@ body {
 
 .logo-sl {
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
 }
