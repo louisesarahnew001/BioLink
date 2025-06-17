@@ -25,7 +25,7 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  margin-top: -60px;
+  margin-top: -30px;
   border: 5px solid #fdf8f3;
   object-fit: cover;
 }
